@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "nodemon bootstrap",
-    "postinstall": "knex migrate:latest && knex seed:make 01_Tasks"
+    "postinstall": "knex migrate:latest && knex seed:run 01_Tasks"
   },
   "keywords": [
     "api",
