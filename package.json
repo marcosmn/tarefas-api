@@ -3,9 +3,12 @@
   "version": "0.0.1",
   "description": "API do App Lista de tarefas",
   "main": "src/server.js",
+  "engines": {
+    "node": "10.11.0"
+  },
   "scripts": {
     "start": "nodemon bootstrap",
-    "postinstall": "knex migrate:latest"
+    "postinstall": "knex migrate:latest && knex seed:make 01_Tasks"
   },
   "keywords": [
     "api",
